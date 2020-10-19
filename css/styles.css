@@ -763,9 +763,22 @@ img {
 }
 
 .footer-links {
-  display: flexbox;
+  display: flex;
   flex-direction: column;
   width: 210px;
+  margin-right: 93px;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  width: 510px;
+}
+
+.btn-icon {
+  margin-left: 10px;
+  fill: var(--white-color);
+  transition: fill 250ms var(--timing-function);
 }
 
 .backdrop {
@@ -825,4 +838,8 @@ img {
 .closebtn:focus {
   fill: var(--accent-color);
   outline: transparent;
+}
+
+textarea {
+  resize: none;
 }
