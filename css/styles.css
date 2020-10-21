@@ -769,6 +769,10 @@ img {
   margin-right: 93px;
 }
 
+.subscription-form {
+  display: flex;
+}
+
 
 .subscription-input {
   margin-right: 12px;
@@ -829,8 +833,7 @@ img {
 }
 
 .service-order {
-  /* display: flex; */
-  /* justify-content: center; */
+  
   align-items: center;
 }
 
@@ -845,8 +848,8 @@ margin-bottom: 30px;
 }
 
 .form-item {
-    position: relative;
-    margin-bottom: 28px;
+ position: relative;
+ margin-bottom: 28px;
 }
 
 .form-input {
@@ -876,6 +879,23 @@ transition: all 250ms var(--timing-function);
   color: var(--secondary-text-color);
 }
 
+  .form-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  
+  fill: var(--rare-text-color);
+  transform: translateY(-50%);
+
+  transition: all 250ms var(--timing-function);
+}
+
+.form-input:focus ~ .form-icon,
+.form-input:hover ~ .form-icon,
+.form-input:not(:placeholder-shown) ~ .form-icon {
+  fill: var(--accent-color);
+}
+
 .comments {
   resize: none;
   width: 100%;
@@ -895,6 +915,10 @@ transition: all 250ms var(--timing-function);
 .contract {
   color: var(--accent-color);
   text-decoration: underline;
+}
+
+.checkbox-field {
+  text-align: center;
 }
 
 .form-submition {
